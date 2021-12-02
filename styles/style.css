@@ -1,0 +1,125 @@
+:root {
+  --maincolor: #212121;
+  --menucolor: #616161;
+  --backgroundcolor: #424242;
+  font-size: 18px;
+}
+
+body {
+  color: var(--maincolor);
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+.hero {
+  height: 350px;
+  background: linear-gradient(to top, rgba(255, 255, 255, .3), transparent), url('../img/background/patron-1.png');
+}
+
+a {
+  color: var(--maincolor);
+}
+
+h1 {
+  font-size: 60px;
+  margin-block: 60px 16px;
+}
+
+h2 {
+  font-size: 2em;
+  margin-block-start: 64px;
+  font-weight: normal;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin-block: 16px 24px;
+}
+
+hr {
+  border: 1px solid var(--menucolor);
+  margin-block: 0 64px;
+}
+
+blockquote {
+  font-size: 24px;
+  margin-block-start: 32px;
+  margin-block-end: 64px;
+  padding-inline-start: 16px;
+}
+
+blockquote p span {
+  color: var(--menucolor);
+}
+
+blockquote p:last-child::before {
+
+  content: '- ';
+}
+
+.section-content {
+  counter-reset: counterList;
+}
+
+.section-content img {
+  margin-block-start: 40px;
+}
+
+.section-content+hr {
+  display: none;
+}
+
+.box-model {
+  margin-block-start: 164px;
+}
+
+.box-model ul li {
+  margin-block-start: 16px;
+}
+
+.box-model ol li {
+  line-height: 24px;
+}
+
+section.section-content h3 {
+  counter-increment: counterList;
+  padding-block-end: 4px;
+}
+
+section.section-content h3::before {
+  content: counter(counterList) ". ";
+}
+
+section.section-content h3::after {
+  content: '';
+  width: 80px;
+  height: 4px;
+  background: var(--backgroundcolor);
+  display: block;
+}
+
+nav details summary {
+  font-weight: bold;
+}
+
+header {
+  font-size: 14px;
+  color: var(--menucolor);
+}
+
+header a {
+  color: var(--menucolor);
+  text-decoration: none;
+}
+
+header a:hover {
+  color: var(--maincolor);
+}
+
+pre {
+  background: #FEC62C;
+  padding-block: 40px;
+  padding-inline-start: 40px;
+  font-family: roboto;
+  line-height: 24px;
+}
