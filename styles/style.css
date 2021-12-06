@@ -11,6 +11,19 @@ body {
   margin: 0;
 }
 
+.main {
+  padding: 20px;
+}
+
+.wrapper {
+  width: 920px;
+  margin: auto;
+}
+
+.main-content {
+
+}
+
 .hero {
   height: 350px;
   background: linear-gradient(to top, rgba(255, 255, 255, .3), transparent), url('../img/background/patron-1.png');
@@ -46,6 +59,8 @@ blockquote {
   margin-block-start: 32px;
   margin-block-end: 64px;
   padding-inline-start: 16px;
+  border-inline-start: 4px solid var(--maincolor);
+  line-height: 34px;
 }
 
 blockquote p span {
