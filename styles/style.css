@@ -12,7 +12,7 @@ body {
 }
 
 .main {
-  padding: 20px;
+  position: relative;
 }
 
 .wrapper {
@@ -21,8 +21,9 @@ body {
 }
 
 .main-content {
-
+  padding: 20px;
 }
+
 
 .hero {
   height: 350px;
@@ -47,6 +48,9 @@ h2 {
 h3 {
   font-size: 1.5em;
   margin-block: 16px 24px;
+  position: sticky;
+  top: 0;
+  background: white;
 }
 
 hr {
@@ -98,7 +102,7 @@ blockquote p:last-child::before {
 
 section.section-content h3 {
   counter-increment: counterList;
-  padding-block-end: 4px;
+  padding-block-end: 8px;
 }
 
 section.section-content h3::before {
@@ -110,7 +114,11 @@ section.section-content h3::after {
   width: 80px;
   height: 4px;
   background: var(--backgroundcolor);
-  display: block;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
 }
 
 nav details summary {
@@ -118,8 +126,13 @@ nav details summary {
 }
 
 header {
+  width: 188px;
   font-size: 14px;
   color: var(--menucolor);
+  position: absolute;
+  top: 0;
+  /* left:-188px; */
+  background: red;
 }
 
 header a {
@@ -129,6 +142,11 @@ header a {
 
 header a:hover {
   color: var(--maincolor);
+}
+
+header-content {
+  padding-inline: 20px;
+
 }
 
 pre {
