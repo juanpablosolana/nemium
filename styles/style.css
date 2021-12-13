@@ -130,9 +130,10 @@ header {
   font-size: 14px;
   color: var(--menucolor);
   position: absolute;
-  top: 0;
+  top: 90px;
+  left: 70px;
   /* left:-188px; */
-  background: red;
+  /* background: red; */
 }
 
 header a {
